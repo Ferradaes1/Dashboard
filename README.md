@@ -1,4 +1,4 @@
-# LESGIRI Dashboard
+# FACIOTECH Dashboard
 
 Dashboard administrativo moderno para gestão de negócios, desenvolvido com HTML, CSS e JavaScript.
 
