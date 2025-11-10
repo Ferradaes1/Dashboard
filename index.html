@@ -3,113 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>LESGIRI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Faciotech - Dashboard</title>
+
 </head>
 <body>
 
-    <!-- SIDEBAR -->
     <aside class="sidebar">
         <div class="logo">
             <h2>MENU</h2>
         </div>
         <ul class="nav-menu">
-            <li class="nav-item active">Dashboard</li>
-            <li class="nav-item">Análises</li>
-            <li class="nav-item">Relatórios</li>
-            <li class="nav-item">Usuários</li>
-            <li class="nav-item">Configurações</li>
-            <li class="nav-item">Suporte</li>
+            <li class="nav-item active">
+                <i>📊</i>
+                <span>Dashboard</span>
+            </li>
+            <li class="nav-item">
+                <i>📈</i>
+                <span>Análises</span>
+            </li>
+            <li class="nav-item">
+                <i>📋</i>
+                <span>Relatórios</span>
+            </li>
+            <li class="nav-item">
+                <i>👥</i>
+                <span>Usuários</span>
+            </li>
+            <li class="nav-item">
+                <i>⚙️</i>
+                <span>Configurações</span>
+            </li>
+            <li class="nav-item">
+                <i>💬</i>
+                <span>Suporte</span>
+            </li>
         </ul>
     </aside>
 
-    <!-- HEADER -->
     <header class="header">
-        <h1>Faciotech</h1>
-        <span>Dashboard</span>
+        <div class="header-content">
+            <h1>Faciotech</h1>
+            <span>Dashboard</span>
+        </div>
         <div class="user">
             <img src="https://faciotech.com.br/img/logo.png" alt="imagem de perfil">
             <div class="user-info">
-                <p>Usuário</p>
+                <p>Usuário Admin</p>
+                <div class="user-status">● Online</div>
             </div>
         </div>
     </header>
 
-    <!-- MAIN -->
     <main class="main">
-        <div class="main-content">
-            
-            <!-- Estatísticas -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h3>Vendas Totais</h3>
-                    <div class="stat-value">R$ 124.560</div>
-                    <div class="stat-change">+12% vs último mês</div>
-                </div>
+        <div class="filters-bar">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <button>🔍</button>
+            </div>
+            <select class="date-filter">
+                <option>Hoje</option>
+                <option>Esta Semana</option>
+                <option>Este Mês</option>
+            </select>
+            <button class="filter-btn">Filtrar</button>
+        </div>
 
-                <div class="stat-card">
-                    <h3>Novos Cadastros</h3>
-                    <div class="stat-value">1.250</div>
-                    <div class="stat-change">+3.2%</div>
-                </div>
+        <div class="welcome-banner">
+            <div class="welcome-text">
+                <h2>Bem-vindo de volta, Usuário!</h2>
+                <p>Aqui está o resumo das suas atividades recentes</p>
+            </div>
+            <div class="date-display">
+                <div id="current-date">Carregando data...</div>
+            </div>
+        </div>
 
-                <div class="stat-card">
-                    <h3>Taxa de Conversão</h3>
-                    <div class="stat-value">3.2%</div>
-                    <div class="stat-change">+0.4%</div>
-                </div>
-
-                <div class="stat-card">
-                    <h3>Visitas Abertas</h3>
-                    <div class="stat-value">15</div>
-                    <div class="stat-change">+3 em relação ao mês anterior</div>
-                </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <h3>Vendas Totais</h3>
+                <div class="stat-value">R$ 124.560</div>
+                <div class="stat-change">↑ +12% vs último mês</div>
             </div>
 
-            <!-- Gráfico -->
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <h3>Novos Cadastros</h3>
+                <div class="stat-value">1.250</div>
+                <div class="stat-change">↑ +3.2%</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <h3>Taxa de Conversão</h3>
+                <div class="stat-value">3.2%</div>
+                <div class="stat-change">↑ +0.4%</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">👀</div>
+                <h3>Visitas Abertas</h3>
+                <div class="stat-value">15</div>
+                <div class="stat-change">↑ +3 em relação ao mês anterior</div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
             <div class="chart-container">
-                <h3 class="chart-title">Distribuição</h3>
-                <div class="chart-placeholder">[Gráfico de Barras]</div>
+                <div class="chart-title">
+                    <span>Desempenho de Vendas</span>
+                    <div class="chart-actions">
+                        <button class="chart-btn">Mensal</button>
+                        <button class="chart-btn">Trimestral</button>
+                    </div>
+                </div>
+                <div class="chart-placeholder">[Gráfico de Barras - Vendas Mensais]</div>
             </div>
 
-            <!-- Atividade Recente -->
-            <div class="recent-activity">
-                <h3 class="chart-title">Atividade Recente</h3>
-                <ul class="activity-list">
-                    <li class="activity-item">
-                        <div class="activity-icon">U</div>
-                        <div>
-                            <div>Novo usuário registrado</div>
-                            <div style="color: #cccccc; font-size: 12px;">Há 2 minutos</div>
-                        </div>
-                    </li>
-                    <li class="activity-item">
-                        <div class="activity-icon">V</div>
-                        <div>
-                            <div>Venda realizada - R$ 1.240,00</div>
-                            <div style="color: #cccccc; font-size: 12px;">Há 15 minutos</div>
-                        </div>
-                    </li>
-                    <li class="activity-item">
-                        <div class="activity-icon">S</div>
-                        <div>
-                            <div>Sistema atualizado</div>
-                            <div style="color: #cccccc; font-size: 12px;">Há 1 hora</div>
-                        </div>
-                    </li>
-                    <li class="activity-item">
-                        <div class="activity-icon">R</div>
-                        <div>
-                            <div>Relatório gerado</div>
-                            <div style="color: #cccccc; font-size: 12px;">Há 3 horas</div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="chart-container">
+                <div class="chart-title">
+                    <span>Distribuição</span>
+                    <div class="chart-actions">
+                        <button class="chart-btn">Categorias</button>
+                    </div>
+                </div>
+                <div class="chart-placeholder">[Gráfico de Pizza - Distribuição]</div>
             </div>
+        </div>
 
+        <div class="interactive-charts">
+            <div class="chart-header">
+                <h3>Performance em Tempo Real</h3>
+                <div class="chart-legend">
+                    <span class="legend-item">● Vendas</span>
+                    <span class="legend-item">● Meta</span>
+                </div>
+            </div>
+            <div class="chart-placeholder">[Gráfico de Linhas - Performance em Tempo Real]</div>
+        </div>
+
+        <div class="recent-activity">
+            <h3>
+                <span>Atividade Recente</span>
+                <span class="view-all">Ver tudo</span>
+            </h3>
+            <ul class="activity-list">
+                <li class="activity-item">
+                    <div class="activity-icon">U</div>
+                    <div class="activity-content">
+                        <div>Novo usuário registrado</div>
+                        <div class="activity-time">Há 2 minutos</div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-icon">V</div>
+                    <div class="activity-content">
+                        <div>Venda realizada - R$ 1.240,00</div>
+                        <div class="activity-time">Há 15 minutos</div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-icon">S</div>
+                    <div class="activity-content">
+                        <div>Sistema atualizado</div>
+                        <div class="activity-time">Há 1 hora</div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-icon">R</div>
+                    <div class="activity-content">
+                        <div>Relatório gerado</div>
+                        <div class="activity-time">Há 3 horas</div>
+                    </div>
+                </li>
+                <li class="activity-item">
+                    <div class="activity-icon">A</div>
+                    <div class="activity-content">
+                        <div>Backup do sistema realizado</div>
+                        <div class="activity-time">Há 5 horas</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="quick-actions">
+            <div class="action-btn">
+                <div class="action-icon">📥</div>
+                <div class="action-text">Exportar Dados</div>
+            </div>
+            <div class="action-btn">
+                <div class="action-icon">🔄</div>
+                <div class="action-text">Atualizar</div>
+            </div>
+            <div class="action-btn">
+                <div class="action-icon">🖨️</div>
+                <div class="action-text">Imprimir</div>
+            </div>
+            <div class="action-btn">
+                <div class="action-icon">🔔</div>
+                <div class="action-text">Notificações</div>
+            </div>
         </div>
     </main>
+
+    <script>
+        function updateDate() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            document.getElementById('current-date').textContent = 
+                now.toLocaleDateString('pt-BR', options);
+        }
+        
+        updateDate();
+        
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
