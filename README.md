@@ -1,55 +1,66 @@
 # FACIOTECH Dashboard
 
-Dashboard administrativo moderno para gestão de negócios, desenvolvido com HTML, CSS e JavaScript.
+Protótipo de dashboard administrativo desenvolvido para a empresa **FACIOTECH**, com foco em visualização de informações e organização de dados em uma interface web moderna e funcional.
 
-<img width="1890" height="902" alt="image" src="https://github.com/user-attachments/assets/fd616f63-cd27-4059-ae23-f1ea96031d34" />
+O projeto foi criado com o objetivo de servir como base visual e estrutural para um painel interno, priorizando usabilidade, clareza das informações e layout responsivo.
 
+---
 
-## 📊 Sobre o Projeto
+## 🧩 Sobre o Projeto
 
-Dashboard responsivo com interface moderna em tema escuro, ideal para monitoramento de métricas empresariais e acompanhamento de desempenho.
+O **FACIOTECH Dashboard** é um projeto front-end que simula um painel administrativo, permitindo a visualização de dados e seções organizadas de forma intuitiva.
+
+Este dashboard foi desenvolvido como **protótipo**, não possuindo integração com back-end ou banco de dados, mas preparado estruturalmente para futuras expansões.
+
+---
 
 ## 🚀 Funcionalidades
 
-- **Visualização de Métricas**: Acompanhe vendas, cadastros e taxas de conversão
-- **Gráficos Interativos**: Desempenho de vendas, distribuição e performance em tempo real
-- **Atividades Recentes**: Timeline com as últimas ações do sistema
-- **Menu Navegável**: Acesso rápido às principais seções
-- **Design Responsivo**: Adaptado para mobile e desktop
+- Interface de dashboard administrativo
+- Layout organizado por seções
+- Estrutura preparada para exibição de dados
+- Design responsivo para diferentes tamanhos de tela
+- Navegação simples e intuitiva
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (Grid, Flexbox, Animações)
-- JavaScript
-- Google Fonts (Poppins)
+- **HTML5** — estrutura semântica da aplicação  
+- **CSS3** — estilização, layout e responsividade  
+- **JavaScript** — interações básicas e manipulação da interface  
 
-## 📱 Layout
+---
 
-- **Header**: Branding e informações do usuário
-- **Sidebar**: Menu de navegação fixo
-- **Main Content**: 
-  - Cards de métricas com indicadores
-  - Seção de gráficos e visualizações
-  - Feed de atividades recentes
-  - Ações rápidas
+## 🎯 Objetivo do Projeto
 
-## 🎨 Características do Design
+- Criar um **protótipo visual** de dashboard corporativo  
+- Praticar conceitos de **front-end**, organização de layout e UI  
+- Simular um cenário real de desenvolvimento para empresa  
+- Servir como base para futuras implementações com dados reais  
 
-- Tema escuro com acentuação em vermelho
-- Interface limpa e intuitiva
-- Animações suaves e feedback visual
-- Tipografia moderna (Poppins)
-- Layout adaptativo para diferentes telas
+---
 
-## 📥 Como Executar
+## 📱 Responsividade
 
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/lesgiri-dashboard.git
+O layout foi desenvolvido com foco em **responsividade**, garantindo uma boa experiência de uso tanto em desktops quanto em dispositivos móveis.
 
-# Acesse o diretório
-cd lesgiri-dashboard
+---
 
-# Abra no navegador
-open index.html
+## 📌 Status do Projeto
+
+🟢 **Protótipo concluído**  
+O projeto pode receber melhorias futuras, como integração com API, autenticação de usuários e gráficos dinâmicos.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Miguel Ferradaes**  
+GitHub: https://github.com/Ferradaes1
+
+---
+
+## 📄 Observação
+
+Este projeto foi desenvolvido exclusivamente para fins de estudo e prototipação front-end.
